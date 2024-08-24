@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(175, 175, 226);
+    
+}
+.color{
+    font-size: 70px;
+    color: white;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background: #fff;
+    padding: 30px 10px;
+    background: linear-gradient(to right,rgb(175, 175, 226) ,10%,rgb(127, 127, 194));
+    border: 3px solid black;
+    border-radius: 4%;
+
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#cityname{
+    margin: 15px 0;
+    padding: 5px 5px;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+}
+
+#btn{
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+.first,.second,.third{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    
+    margin: 5px;
+}
+.country{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px ;
+    
+    
+}
+
+.temp{
+    
+    
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.temp .inner_temp{
+    display: flex;
+    flex-direction: column;
+}
+.temp h3{
+    margin: 5px 0;
+}
+.wind,.wind_direction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 5px 0;
+    
+
+}
+.last_updated{
+    margin: 10px ;
+    
+}
+
+
+@media (max-width: 780px) {
+    .main{
+        width: 80%;
+    }
+  }

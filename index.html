@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>weather</title>
+</head>
+<body>
+
+   <div class="main">
+    <div class="icon">
+        <i class="fa-solid fa-cloud-sun color"></i>
+    </div>
+    <div class="search">
+        <input type="search" id="cityname">
+        <button id="btn" ><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="first">
+        <div class="country">
+            <h3>Location<i class="fa-solid fa-location-dot"></i></h3>
+            <p id="country"></p>
+        </div>
+
+        <div class="temp">
+            <h3>Temprature<i class="fa-solid fa-temperature-three-quarters"></i></h3>
+            <div class="inner_temp">
+
+                <span>℃ <span id="temp"> </span></span>  
+                <span>°F <span id="tempf"></span></span>
+            </div>
+        </div>
+    </div>
+    <div class="second">
+
+        <div class="wind">
+            <h3>Wind<i class="fa-solid fa-wind"></i></h3>
+            <p id="wind"> </p>
+            
+        </div>
+        <div class="wind_direction">
+            <h3>Wind-direction</h3>
+            <p id="wind_direction"> </p>
+
+        </div>
+    </div>
+    <div class="third">
+        <div class="last_updated">
+            <h2>Last Updated</h2>
+            <p id="last_updated"></p>
+        </div>
+    </div>
+    
+   </div>
+
+   
+   <script type="module" src="script.js"></script>
+</body>
+</html>
